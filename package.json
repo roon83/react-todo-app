@@ -1,0 +1,49 @@
+{
+  "name": "react-todo-app",
+  "version": "1.0.0",
+  "description": "A simple todo app made with react.js for panacloud bootcamp challenge.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --open",
+    "build": "NODE_ENV='production' webpack -p",
+    "deploy": "npm run build && firebase deploy",
+    "firebase-init": "firebase login && firebase init"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-0"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roon83/react-todo-app.git"
+  },
+  "author": "Ghulam Ahmed Lasi (roon83@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roon83/react-todo-app/issues"
+  },
+  "homepage": "https://github.com/roon83/react-todo-app#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.29.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
